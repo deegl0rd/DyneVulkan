@@ -1,3 +1,2 @@
-﻿  LINK : E:\REPOS\DyneEngine\x64\MTDebug\DyneVulkan.exe not found or not built by the last incremental link; performing full link
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  Application.cpp
   DyneVulkan.vcxproj -> E:\REPOS\DyneEngine\x64\MTDebug\DyneVulkan.exe

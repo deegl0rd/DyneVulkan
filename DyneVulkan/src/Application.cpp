@@ -38,7 +38,7 @@ namespace Dyne
 	{
 		allocateBuffers();
 		DyneTexture::createTextureSampler(appDevice, textureSampler);
-		auto tex = DyneTexture::createTextureFromFile(appDevice, "textures/concrete.jpg");
+		auto tex = DyneTexture::createTextureFromFile(appDevice, "textures/viking_room.png");
 
 		auto globalSetLayout = DyneDescriptorSetLayout::Builder(appDevice)
 			.addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
@@ -66,7 +66,8 @@ namespace Dyne
 
 		Camera camera{};
 		GameObject cameraObject = GameObject::createGameObject();
-		cameraObject.transform.translation.z = -2.5f;
+		cameraObject.transform.translation = glm::vec3{ 7.0f, -2.0f, 0.0f };
+		cameraObject.transform.rotation = glm::vec3{ 0.0f , glm::radians(-90.0f), 0.0f};
 		InputHandler cameraController{};
 		cameraController.setMouseEnabled(&app, true);
 
@@ -115,6 +116,11 @@ namespace Dyne
 				pointLightSystem.render(frameInfo);
 				appRenderer.endSwapChainRenderPass(commandBuffer);
 				appRenderer.endFrame();
+
+				//auto& trs = cameraObject.transform.translation;
+				//auto& rot = cameraObject.transform.rotation;
+				//printf("Camera (XYZ) : %f, %f, %f | ", trs.x, trs.y, trs.z);
+				//printf("Rot (XYZ) : %f, %f, %f\n", rot.x, rot.y, rot.z);
 			}
 		}
 
@@ -149,26 +155,27 @@ namespace Dyne
 
 	void Application::loadGameObjects()
 	{
-		std::shared_ptr<DyneModel> model = DyneModel::createModelFromFile(appDevice, "models/smooth_vase.obj");
+		std::shared_ptr<DyneModel> model = DyneModel::createModelFromFile(appDevice, "models/viking_room.obj");
 		std::shared_ptr<DyneModel> quadModel = DyneModel::createModelFromFile(appDevice, "models/quad.obj");
 
 		auto gameObj = GameObject::createGameObject();
 		gameObj.model = model;
 		gameObj.transform.translation = { -1.0f, 0.0f, 0.0f };
+		gameObj.transform.rotation = { glm::radians(90.0f), 0.0f, 0.0f };
 		gameObj.transform.scale = glm::vec3(5.0f);
 		gameObjects.emplace(gameObj.getID(), std::move(gameObj));
 
-		auto gameObj2 = GameObject::createGameObject();
-		gameObj2.model = model;
-		gameObj2.transform.translation = { 1.0f, 0.0f, 0.0f };
-		gameObj2.transform.scale = glm::vec3(5.0f);
-		gameObjects.emplace(gameObj2.getID(), std::move(gameObj2));
+		//auto gameObj2 = GameObject::createGameObject();
+		//gameObj2.model = model;
+		//gameObj2.transform.translation = { 1.0f, 0.0f, 0.0f };
+		//gameObj2.transform.scale = glm::vec3(5.0f);
+		//gameObjects.emplace(gameObj2.getID(), std::move(gameObj2));
 
-		auto gameObj3 = GameObject::createGameObject();
-		gameObj3.model = quadModel;
-		gameObj3.transform.translation = { 0.0f, 0.5f, 0.0f };
-		gameObj3.transform.scale = glm::vec3(5.0f);
-		gameObjects.emplace(gameObj3.getID(), std::move(gameObj3));
+		//auto gameObj3 = GameObject::createGameObject();
+		//gameObj3.model = quadModel;
+		//gameObj3.transform.translation = { 0.0f, 0.5f, 0.0f };
+		//gameObj3.transform.scale = glm::vec3(5.0f);
+		//gameObjects.emplace(gameObj3.getID(), std::move(gameObj3));
 
 		std::vector<glm::vec3> lightColors
 		{
@@ -182,7 +189,7 @@ namespace Dyne
 
 		for (int i = 0; i < lightColors.size(); i++)
 		{
-			auto pointLight = GameObject::makePointLight(0.2f);
+			auto pointLight = GameObject::makePointLight(1.0f);
 			pointLight.color = lightColors[i];
 			auto rotateLight = glm::rotate
 			(
@@ -190,7 +197,7 @@ namespace Dyne
 				(i * glm::two_pi<float>()) / lightColors.size(),
 				{ 0.0f, -1.0f, 0.0f }
 			);
-			pointLight.transform.translation = glm::vec3(rotateLight * glm::vec4(-1.0f, -1.0f, -1.0f, 1.0f));
+			pointLight.transform.translation = glm::vec3(rotateLight * glm::vec4(-1.0f, -0.5f, -1.0f, 1.0f));
 
 			gameObjects.emplace(pointLight.getID(), std::move(pointLight));
 		}
