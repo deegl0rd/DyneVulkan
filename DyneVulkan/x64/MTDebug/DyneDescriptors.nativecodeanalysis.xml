@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDescriptors.cpp</FILENAME>
+      <LINE>10</LINE>
+      <COLUMN>72</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkDescriptorType' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDescriptorSetLayout::Builder::addBinding</FUNCTION>
+    <DECORATED>?addBinding@Builder@DyneDescriptorSetLayout@Dyne@@QEAAAEAV123@IW4VkDescriptorType@@II@Z</DECORATED>
+    <FUNCLINE>10</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDescriptors.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26817</DEFECTCODE>
+    <DESCRIPTION>Potentially expensive copy of variable 'kv' in range-for loop. Consider making it a const reference (es.71).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDescriptorSetLayout::{ctor}</FUNCTION>
+    <DECORATED>??0DyneDescriptorSetLayout@Dyne@@QEAA@AEAVDyneDevice@1@V?$unordered_map@IUVkDescriptorSetLayoutBinding@@U?$hash@I@std@@U?$equal_to@I@3@V?$allocator@U?$pair@$$CBIUVkDescriptorSetLayoutBinding@@@std@@@3@@std@@@Z</DECORATED>
+    <FUNCLINE>33</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDescriptors.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Dyne::DyneDescriptorSetLayout::descriptorSetLayout' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDescriptorSetLayout::{ctor}</FUNCTION>
+    <DECORATED>??0DyneDescriptorSetLayout@Dyne@@QEAA@AEAVDyneDevice@1@V?$unordered_map@IUVkDescriptorSetLayoutBinding@@U?$hash@I@std@@U?$equal_to@I@3@V?$allocator@U?$pair@$$CBIUVkDescriptorSetLayoutBinding@@@std@@@3@@std@@@Z</DECORATED>
+    <FUNCLINE>33</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Dyne::DyneDescriptorSetLayout::descriptorSetLayout</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDescriptors.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDescriptorSetLayout::{ctor}</FUNCTION>
+    <DECORATED>??0DyneDescriptorSetLayout@Dyne@@QEAA@AEAVDyneDevice@1@V?$unordered_map@IUVkDescriptorSetLayoutBinding@@U?$hash@I@std@@U?$equal_to@I@3@V?$allocator@U?$pair@$$CBIUVkDescriptorSetLayoutBinding@@@std@@@3@@std@@@Z</DECORATED>
+    <FUNCLINE>33</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

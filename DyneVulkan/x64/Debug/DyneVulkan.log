@@ -1,0 +1,44 @@
+﻿LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(win32_joystick.obj)' in function '_glfwPlatformUpdateGamepadGUID'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(wgl_context.obj)' in function '_glfwCreateContextWGL'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(egl_context.obj)' in function '_glfwInitEGL'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(osmesa_context.obj)' in function '_glfwCreateContextOSMesa'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(win32_monitor.obj)' in function '_glfwPlatformGetVideoMode'
+LINK : warning LNK4286: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(monitor.obj)'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(vulkan.obj)' in function '_glfwGetVulkanResultString'
+LINK : warning LNK4286: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(win32_window.obj)'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(init.obj)' in function 'terminate'
+LINK : warning LNK4286: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(window.obj)'
+LINK : warning LNK4286: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(input.obj)'
+LINK : warning LNK4217: symbol 'free' defined in 'libucrtd.lib(free.obj)' is imported by 'glfw3.lib(win32_init.obj)' in function '_glfwCreateWideStringFromUTF8Win32'
+LINK : warning LNK4217: symbol '__stdio_common_vsprintf' defined in 'libucrtd.lib(output.obj)' is imported by 'glfw3.lib(init.obj)' in function '_glfwInputError'
+LINK : warning LNK4217: symbol '__stdio_common_vsprintf' defined in 'libucrtd.lib(output.obj)' is imported by 'glfw3.lib(win32_joystick.obj)' in function 'sprintf'
+LINK : warning LNK4217: symbol 'strcspn' defined in 'libucrtd.lib(strcspn.obj)' is imported by 'glfw3.lib(input.obj)' in function 'glfwUpdateGamepadMappings'
+LINK : warning LNK4217: symbol 'strncmp' defined in 'libucrtd.lib(strncmp.obj)' is imported by 'glfw3.lib(input.obj)' in function 'parseMapping'
+LINK : warning LNK4286: symbol 'strncmp' defined in 'libucrtd.lib(strncmp.obj)' is imported by 'glfw3.lib(context.obj)'
+LINK : warning LNK4286: symbol 'strncmp' defined in 'libucrtd.lib(strncmp.obj)' is imported by 'glfw3.lib(egl_context.obj)'
+LINK : warning LNK4217: symbol 'strtoul' defined in 'libucrtd.lib(strtox.obj)' is imported by 'glfw3.lib(input.obj)' in function 'parseMapping'
+LINK : warning LNK4217: symbol 'qsort' defined in 'libucrtd.lib(qsort.obj)' is imported by 'glfw3.lib(monitor.obj)' in function 'refreshVideoModes'
+LINK : warning LNK4217: symbol 'qsort' defined in 'libucrtd.lib(qsort.obj)' is imported by 'glfw3.lib(win32_joystick.obj)' in function '_glfwPlatformUpdateGamepadGUID'
+glfw3.lib(win32_joystick.obj) : error LNK2019: unresolved external symbol __imp_calloc referenced in function deviceCallback
+glfw3.lib(wgl_context.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(egl_context.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(osmesa_context.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(vulkan.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(init.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(window.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(input.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(win32_init.obj) : error LNK2001: unresolved external symbol __imp_calloc
+glfw3.lib(window.obj) : error LNK2019: unresolved external symbol __imp_strncpy referenced in function glfwWindowHintString
+glfw3.lib(input.obj) : error LNK2001: unresolved external symbol __imp_strncpy
+glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __imp_strncpy
+glfw3.lib(win32_joystick.obj) : error LNK2001: unresolved external symbol __imp_strncpy
+glfw3.lib(input.obj) : error LNK2019: unresolved external symbol __imp_strspn referenced in function glfwUpdateGamepadMappings
+glfw3.lib(input.obj) : error LNK2019: unresolved external symbol __imp_realloc referenced in function glfwUpdateGamepadMappings
+glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol __imp_realloc
+glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __imp_realloc
+glfw3.lib(context.obj) : error LNK2019: unresolved external symbol __imp___stdio_common_vsscanf referenced in function sscanf
+E:\REPOS\DyneEngine\x64\Debug\DyneVulkan.exe : fatal error LNK1120: 5 unresolved externals

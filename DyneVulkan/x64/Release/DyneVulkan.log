@@ -1,0 +1,33 @@
+﻿  PointLightSystem.cpp
+  DyneDescriptors.cpp
+E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\DyneDescriptors.cpp(213,98): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  DyneBuffer.cpp
+  InputHandler.cpp
+E:\REPOS\DyneEngine\DyneVulkan\src\Engine\InputHandler.cpp(37,17): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\REPOS\DyneEngine\DyneVulkan\src\Engine\InputHandler.cpp(38,17): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Camera.cpp
+  DefaultRenderSystem.cpp
+  DyneRenderer.cpp
+E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\DyneRenderer.cpp(42,42): warning C4244: 'argument': conversion from 'float' to 'uint32_t', possible loss of data
+  GameObject.cpp
+  DyneModel.cpp
+  Application.cpp
+  DyneSwapchain.cpp
+  DyneDevice.cpp
+  DynePipeline.cpp
+  Main.cpp
+  WindowHandler.cpp
+  Generating code
+  1831 of 4154 functions (44.1%) were compiled, the rest were copied from previous compilation.
+    12 functions were new in current compilation
+    133 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  DyneVulkan.vcxproj -> E:\REPOS\DyneEngine\x64\Release\DyneVulkan.exe

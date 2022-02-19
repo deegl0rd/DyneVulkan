@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkDebugUtilsMessageSeverityFlagBitsEXT' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::debugCallback</FUNCTION>
+    <DECORATED>?debugCallback@Dyne@@YAIW4VkDebugUtilsMessageSeverityFlagBitsEXT@@IPEBUVkDebugUtilsMessengerCallbackDataEXT@@PEAX@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::CreateDebugUtilsMessengerEXT</FUNCTION>
+    <DECORATED>?CreateDebugUtilsMessengerEXT@Dyne@@YA?AW4VkResult@@PEAUVkInstance_T@@PEBUVkDebugUtilsMessengerCreateInfoEXT@@PEBUVkAllocationCallbacks@@PEAPEAUVkDebugUtilsMessengerEXT_T@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.hpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Dyne::QueueFamilyIndices::graphicsFamily' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Dyne::QueueFamilyIndices::{ctor}</FUNCTION>
+    <DECORATED>??0QueueFamilyIndices@Dyne@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Dyne::QueueFamilyIndices::graphicsFamily</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.hpp</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Dyne::QueueFamilyIndices::presentFamily' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Dyne::QueueFamilyIndices::{ctor}</FUNCTION>
+    <DECORATED>??0QueueFamilyIndices@Dyne@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Dyne::QueueFamilyIndices::presentFamily</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.hpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Dyne::SwapChainSupportDetails::capabilities' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Dyne::SwapChainSupportDetails::{ctor}</FUNCTION>
+    <DECORATED>??0SwapChainSupportDetails@Dyne@@QEAA@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Dyne::SwapChainSupportDetails::capabilities</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.cpp</FILENAME>
+      <LINE>373</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkPresentModeKHR' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDevice::querySwapChainSupport</FUNCTION>
+    <DECORATED>?querySwapChainSupport@DyneDevice@Dyne@@AEAA?AUSwapChainSupportDetails@2@PEAUVkPhysicalDevice_T@@@Z</DECORATED>
+    <FUNCLINE>352</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.cpp</FILENAME>
+      <LINE>378</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkImageTiling' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDevice::findSupportedFormat</FUNCTION>
+    <DECORATED>?findSupportedFormat@DyneDevice@Dyne@@QEAA?AW4VkFormat@@AEBV?$vector@W4VkFormat@@V?$allocator@W4VkFormat@@@std@@@std@@W4VkImageTiling@@I@Z</DECORATED>
+    <FUNCLINE>378</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneDevice.cpp</FILENAME>
+      <LINE>379</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkFormat' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneDevice::findSupportedFormat</FUNCTION>
+    <DECORATED>?findSupportedFormat@DyneDevice@Dyne@@QEAA?AW4VkFormat@@AEBV?$vector@W4VkFormat@@V?$allocator@W4VkFormat@@@std@@@std@@W4VkImageTiling@@I@Z</DECORATED>
+    <FUNCLINE>378</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

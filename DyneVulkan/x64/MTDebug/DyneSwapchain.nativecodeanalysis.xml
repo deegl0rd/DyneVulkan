@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneSwapchain.hpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkFormat' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneSwapchain::getSwapChainImageFormat</FUNCTION>
+    <DECORATED>?getSwapChainImageFormat@DyneSwapchain@Dyne@@QEAA?AW4VkFormat@@XZ</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneSwapchain.cpp</FILENAME>
+      <LINE>69</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneSwapchain::acquireNextImage</FUNCTION>
+    <DECORATED>?acquireNextImage@DyneSwapchain@Dyne@@QEAA?AW4VkResult@@PEAI@Z</DECORATED>
+    <FUNCLINE>68</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneSwapchain.cpp</FILENAME>
+      <LINE>139</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkPresentModeKHR' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneSwapchain::createSwapChain</FUNCTION>
+    <DECORATED>?createSwapChain@DyneSwapchain@Dyne@@AEAAXXZ</DECORATED>
+    <FUNCLINE>135</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
