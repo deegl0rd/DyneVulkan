@@ -1,2 +1,5 @@
 ﻿  Application.cpp
+  DefaultRenderSystem.cpp
+  PointLightSystem.cpp
+  Generating Code...
   DyneVulkan.vcxproj -> E:\REPOS\DyneEngine\x64\MTDebug\DyneVulkan.exe

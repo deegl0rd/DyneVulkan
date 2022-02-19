@@ -15,6 +15,7 @@ struct PointLight
 
 layout(set = 0, binding = 0) uniform GlobalUbo
 {
+	vec4 camerapos;
 	mat4 projection;
 	mat4 view;
 	vec4 ambientLightColor;
@@ -37,13 +38,23 @@ void main()
 
 	for(int i = 0; i < ubo.numLights; i++)
 	{
+		//diffuse light
 		PointLight light = ubo.pointLights[i];
 		vec3 directionToLight = light.position.xyz - fragPosWorld;
+		vec3 intensity = light.color.xyz * light.color.w;
+
 		float attenuation = 1.0 / dot(directionToLight, directionToLight);
 		float cosAngIncidence = max(dot(surfaceNormal, normalize(directionToLight)), 0);
-		vec3 intensity = light.color.xyz * light.color.w * attenuation;
 
-		diffuseLight += intensity * cosAngIncidence;
+		diffuseLight += intensity * attenuation * cosAngIncidence;
+
+		//specular light
+		vec3 viewDir = normalize(ubo.camerapos.xyz - fragPosWorld);
+		vec3 reflectDir = reflect(normalize(-directionToLight), surfaceNormal);
+		float spec = pow(max(dot(viewDir, reflectDir), 0.0), 128);
+		vec3 specular = 0.5f * spec * intensity;
+
+		diffuseLight += specular;
 	}
 
 	outColor = texture(texSampler, fragUv) * vec4(diffuseLight * fragColor, 1.0);

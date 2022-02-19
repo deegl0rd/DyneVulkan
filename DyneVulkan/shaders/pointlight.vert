@@ -19,6 +19,7 @@ struct PointLight
 
 layout(set = 0, binding = 0) uniform GlobalUbo
 {
+	vec4 camerapos;
 	mat4 projection;
 	mat4 view;
 	vec4 ambientLightColor;

@@ -103,6 +103,7 @@ namespace Dyne
 
 				//update
 				GlobalUbo ubo{};
+				ubo.camerapos = glm::vec4(cameraObject.transform.translation, 1.0f);
 				ubo.projection = camera.getProjection();
 				ubo.view = camera.getView();
 				pointLightSystem.update(frameInfo, ubo);

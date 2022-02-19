@@ -11,7 +11,8 @@ namespace Dyne
 
 		glm::vec3 rotate{ 0.0f, 0.0f, 0.0f };
 
-		if (isMouseEnabled)
+		bool isWindowActive = glfwGetWindowAttrib(window->getHandle(), GLFW_FOCUSED);
+		if (isMouseEnabled && isWindowActive)
 		{
 			glfwGetCursorPos(window->getHandle(), &mouseX, &mouseY);
 			int centerX = window->getExtent().width / 2;
@@ -39,6 +40,10 @@ namespace Dyne
 			}
 
 			if (glfwGetKey(window->getHandle(), keys.x) == GLFW_PRESS) setMouseEnabled(window, false);
+		}
+		else
+		{
+			setMouseEnabled(window, false);
 		}
 
 		if (glm::dot(rotate, rotate) > std::numeric_limits<float>::epsilon())

@@ -1,6 +1,16 @@
-﻿  Application.cpp
+﻿  InputHandler.cpp
+E:\REPOS\DyneEngine\DyneVulkan\src\Engine\InputHandler.cpp(38,17): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\REPOS\DyneEngine\DyneVulkan\src\Engine\InputHandler.cpp(39,17): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   Generating code
-  1 of 4346 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  2 of 4344 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     13 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
