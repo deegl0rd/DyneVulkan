@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\REPOS\DyneEngine\DyneVulkan\src\VulkanBackend\</FILEPATH>
+      <FILENAME>DyneBuffer.cpp</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Dyne::DyneBuffer::map</FUNCTION>
+    <DECORATED>?map@DyneBuffer@Dyne@@QEAA?AW4VkResult@@_K0@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
